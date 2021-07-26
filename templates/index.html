@@ -1,0 +1,74 @@
+<!--<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+    input[type=submit]{
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    </style>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <title>Duygu Analizi</title>
+
+  </head>
+  <body>
+
+    <form action="{{ url_for('video_feed') }}">
+    <input type="submit" value="Gerçek Zamanlı Duygu Analizi için Tıklayınız." />
+    </form>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top" id="navbar">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="/"><i class="far fa-smile"></i> Duygu Analizi</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+		</nav>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='anacss/main.css')}}">
+    <title>Duygu Analizi</title>
+    <style>
+    body {
+      margin: 0;
+      height: 100%;
+      background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .description, .link {
+      font-family: 'Amatic SC', cursive;
+      text-align: right;
+    }
+
+    .description {
+      font-size: 35px; text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <form action="{{ url_for('video_feed') }}">
+    <div class="button_container">
+  <p class="description">Gerçek Zamanlı Duygu Analizi</p>
+  <button class="btn" type="submit"><span>Tıklayınız</span></button>
+</form>
+</div>
+  </body>
+</html>
